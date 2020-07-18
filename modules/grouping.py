@@ -79,7 +79,9 @@ class MakeTeam:
 
         # チーム分け
         for i in range(party_num): 
-            team.append("=====チーム"+str(i+1)+"=====")
+            team.append("=====アタッカー""=====")
             team.extend(self.channel_mem[i:self.mem_len:party_num])
-
+for i in range(party_num): 
+            team.append("=====ディフェンダー""=====")
+            team.extend(self.channel_mem[i:self.mem_len:party_num])
         return ('\n'.join(team))
